@@ -1,0 +1,135 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  color: #e67e22;
+}
+
+/* Sections */
+section {
+  display: none; /* hide all sections by default */
+  padding: 60px 0;
+  text-align: center;
+}
+
+section.active {
+  display: block; /* show only active section */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-list li {
+  background-color: #3498db;
+  color: #fff;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Projects */
+.project-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.project-item img {
+  width: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.project-info {
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}

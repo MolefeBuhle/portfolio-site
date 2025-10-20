@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buhle Molefe Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Buhle Molefe</h1>
+      <nav>
+        <ul>
+          <li><a onclick="showSection('home')">Home</a></li>
+          <li><a onclick="showSection('about')">About</a></li>
+          <li><a onclick="showSection('skills')">Skills</a></li>
+          <li><a onclick="showSection('projects')">Projects</a></li>
+          <li><a onclick="showSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sections -->
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="active">
+      <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Welcome! I'm Buhle Molefe. I love building projects that look great and easy to use. 
+          This website shows my portfolio. my skills, and ways to contact me for work or collaborations.</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Buhle</h2>
+        <img src="images/profile.jpg" alt="Buhle Molefe" class="profile-img">
+        <p>I'm a creative person who loves creating projects that look nice and are easy to use. I'm still learning and trying to improve my skills every day. I enjoy exploring new ideas, experimenting with different designs, and creating work that people can enjoy and understand. This website shows some of the projects I've worked on so far, and I'm excited to keep learning and building even more in the future..</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+          <li>Communication</li>
+          <li>Python</li>
+          <li>Web Development</li>
+          <li>Photography</li>
+          <li>Creative Thinking</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <img src="images/project1.jpg" alt="Project 1">
+          <div class="project-info">
+            <h3>Creative Website Design</h3>
+            <p>This project was about creating a simple website that works well on both computers and mobile phones. I used HTML5 and CSS3 to design the layout, add styles, and make the site easy to use. The goal was to build a website that looks clean, gives visitors a smooth experience when they browse through the pages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:buhle@gmail.com">mbuhle084@gmail.com</a></p>
+        <p>Phone: +27 65 712 9272</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Buhle Molefe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for section navigation -->
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('main section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+      window.scrollTo(0, 0); // scroll to top
+    }
+  </script>
+
+  <!-- Added script tag for new JavaScript features -->
+  <script src="script.js"></script>
+</body>
+</html>
