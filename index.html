@@ -4,47 +4,57 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Buhle Molefe Portfolio</title>
+
+  <!-- SEO meta tags -->
+  <meta name="description" content="Portfolio of Buhle Molefe, showcasing skills in Python, Web Development, Photography, and creative projects. Contact for collaborations.">
+  <meta name="author" content="Buhle Molefe">
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Preload critical images for performance -->
+  <link rel="preload" as="image" href="images/profile.jpg">
+  <link rel="preload" as="image" href="images/project1.jpg">
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
       <h1>Buhle Molefe</h1>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a onclick="showSection('home')">Home</a></li>
-          <li><a onclick="showSection('about')">About</a></li>
-          <li><a onclick="showSection('skills')">Skills</a></li>
-          <li><a onclick="showSection('projects')">Projects</a></li>
-          <li><a onclick="showSection('contact')">Contact</a></li>
+          <li><a href="#home" onclick="showSection('home')">Home</a></li>
+          <li><a href="#about" onclick="showSection('about')">About</a></li>
+          <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+          <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+          <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Sections -->
+  <!-- Main Sections -->
   <main>
-    <!-- Home Section -->
-    <section id="home" class="active">
+    <!-- Home -->
+    <section id="home" class="active" aria-label="Home section">
       <div class="container">
         <h2>Welcome to My Portfolio</h2>
-        <p>Welcome! I'm Buhle Molefe. I love building projects that look great and easy to use. 
-          This website shows my portfolio. my skills, and ways to contact me for work or collaborations.</p>
+        <p>Welcome! I'm Buhle Molefe. I love building projects that are visually appealing and easy to use. This website showcases my portfolio, skills, and ways to contact me for work or collaborations.</p>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- About -->
+    <section id="about" aria-label="About Buhle">
       <div class="container">
         <h2>About Buhle</h2>
-        <img src="images/profile.jpg" alt="Buhle Molefe" class="profile-img">
-        <p>I'm a creative person who loves creating projects that look nice and are easy to use. I'm still learning and trying to improve my skills every day. I enjoy exploring new ideas, experimenting with different designs, and creating work that people can enjoy and understand. This website shows some of the projects I've worked on so far, and I'm excited to keep learning and building even more in the future..</p>
+        <img src="images/Buhles_Portrait.jpg" alt="Portrait of Buhle Molefe" class="profile-img" width="300" height="300" loading="lazy">
+        <p>I'm a creative person who loves creating projects that look nice and are easy to use. I'm continuously learning and improving my skills every day. I enjoy exploring new ideas, experimenting with designs, and creating work that people can enjoy and understand. This website shows some of my projects, and I'm excited to keep learning and building more in the future.</p>
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <!-- Skills -->
+    <section id="skills" aria-label="Skills section">
       <div class="container">
         <h2>My Skills</h2>
         <ul class="skills-list">
@@ -57,26 +67,26 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- Projects -->
+    <section id="projects" aria-label="Projects section">
       <div class="container">
         <h2>Projects</h2>
         <div class="project-item">
-          <img src="images/project1.jpg" alt="Project 1">
+          <img src="images/Website_Project.jpg" alt="Screenshot of Creative Website Design project" loading="lazy" width="600" height="400">
           <div class="project-info">
             <h3>Creative Website Design</h3>
-            <p>This project was about creating a simple website that works well on both computers and mobile phones. I used HTML5 and CSS3 to design the layout, add styles, and make the site easy to use. The goal was to build a website that looks clean, gives visitors a smooth experience when they browse through the pages.</p>
+            <p>This project was about creating a simple website that works well on both computers and mobile devices. I used HTML5 and CSS3 to design the layout, style the site, and provide a smooth user experience. The goal was to build a clean and easy-to-navigate website for visitors.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- Contact -->
+    <section id="contact" aria-label="Contact section">
       <div class="container">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:buhle@gmail.com">mbuhle084@gmail.com</a></p>
-        <p>Phone: +27 65 712 9272</p>
+        <p>Email: <a href="mailto:mbuhle084@gmail.com">mbuhle084@gmail.com</a></p>
+        <p>Phone: <a href="tel:+27657129272">+27 65 712 9272</a></p>
       </div>
     </section>
   </main>
@@ -98,7 +108,6 @@
     }
   </script>
 
-  <!-- Added script tag for new JavaScript features -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
